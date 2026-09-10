@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Chem Balance AI
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="/style.css"
+  >
+
+</head>
+
+
+<body>
+
+  <main class="container">
+
+
+    <!-- HEADER -->
+
+    <section class="hero">
+
+      <div class="badge">
+        AI • HÓA HỌC
+      </div>
+
+      <h1>
+        Cân bằng phương trình hóa học
+      </h1>
+
+      <p>
+        Nhập phương trình hóa học để AI
+        phân tích và cân bằng.
+      </p>
+
+    </section>
+
+
+
+    <!-- INPUT -->
+
+    <section class="card">
+
+      <label for="equation">
+
+        Nhập phương trình hóa học
+
+      </label>
+
+
+      <textarea
+        id="equation"
+        rows="3"
+        placeholder="Ví dụ: Fe2O3 + CO -> Fe + CO2"
+      ></textarea>
+
+
+
+      <!-- PHƯƠNG TRÌNH MẪU -->
+
+      <div class="examples">
+
+        <button
+          data-example="Fe2O3 + CO -> Fe + CO2"
+        >
+          Fe₂O₃ + CO
+        </button>
+
+
+        <button
+          data-example="KMnO4 + HCl -> KCl + MnCl2 + Cl2 + H2O"
+        >
+          KMnO₄ + HCl
+        </button>
+
+
+        <button
+          data-example="Cu + HNO3 -> Cu(NO3)2 + NO2 + H2O"
+        >
+          Cu + HNO₃
+        </button>
+
+      </div>
+
+
+
+      <!-- BUTTON -->
+
+      <button
+        id="balanceBtn"
+        class="primary"
+      >
+
+        ⚡ Cân bằng phương trình
+
+      </button>
+
+
+      <div
+        id="status"
+        class="status"
+      ></div>
+
+    </section>
+
+
+
+    <!-- RESULT -->
+
+    <section
+      id="result"
+      class="card result hidden"
+    >
+
+
+      <div class="result-head">
+
+        <h2>
+          Kết quả
+        </h2>
+
+
+        <span
+          id="verified"
+          class="verified"
+        ></span>
+
+      </div>
+
+
+
+      <!-- EQUATION -->
+
+      <div class="equation-box">
+
+        <div class="label">
+
+          Phương trình đã cân bằng
+
+        </div>
+
+
+        <div
+          id="balanced"
+          class="balanced"
+        ></div>
+
+      </div>
+
+
+
+      <!-- METHOD -->
+
+      <div class="method-box">
+
+        <strong>
+          Phương pháp:
+        </strong>
+
+        <span id="method"></span>
+
+      </div>
+
+
+
+      <!-- WARNING -->
+
+      <div
+        id="warning"
+        class="warning hidden"
+      ></div>
+
+
+
+      <!-- STEPS -->
+
+      <div class="steps">
+
+        <h2>
+          Các bước giải
+        </h2>
+
+
+        <div id="steps"></div>
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+  <script src="/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,545 @@
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #172033;
+
+  background: #f4f7fb;
+
+}
+
+
+body {
+
+  margin: 0;
+
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(70, 120, 255, .12),
+      transparent 32rem
+    ),
+    #f4f7fb;
+
+}
+
+
+.container {
+
+  width:
+    min(
+      920px,
+      calc(100% - 32px)
+    );
+
+  margin:
+    0 auto;
+
+  padding:
+    52px 0 80px;
+
+}
+
+
+/* HERO */
+
+.hero {
+
+  text-align:
+    center;
+
+  margin-bottom:
+    28px;
+
+}
+
+
+.badge {
+
+  display:
+    inline-block;
+
+  padding:
+    7px 12px;
+
+  border-radius:
+    999px;
+
+  background:
+    #e9efff;
+
+  color:
+    #315bd6;
+
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    .08em;
+
+}
+
+
+h1 {
+
+  font-size:
+    clamp(
+      32px,
+      6vw,
+      52px
+    );
+
+  margin:
+    14px 0 10px;
+
+}
+
+
+.hero p {
+
+  color:
+    #667085;
+
+  font-size:
+    17px;
+
+}
+
+
+/* CARD */
+
+.card {
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      .95
+    );
+
+  border:
+    1px solid #e5e9f2;
+
+  border-radius:
+    22px;
+
+  padding:
+    26px;
+
+  box-shadow:
+    0 18px 50px
+    rgba(
+      31,
+      45,
+      80,
+      .08
+    );
+
+  margin-bottom:
+    22px;
+
+}
+
+
+label {
+
+  display:
+    block;
+
+  font-weight:
+    750;
+
+  margin-bottom:
+    10px;
+
+}
+
+
+/* TEXTAREA */
+
+textarea {
+
+  width:
+    100%;
+
+  resize:
+    vertical;
+
+  border:
+    1px solid #d7ddea;
+
+  border-radius:
+    14px;
+
+  padding:
+    16px;
+
+  font:
+    inherit;
+
+  font-size:
+    18px;
+
+  outline:
+    none;
+
+}
+
+
+textarea:focus {
+
+  border-color:
+    #5375e8;
+
+  box-shadow:
+    0 0 0 4px
+    #5375e81a;
+
+}
+
+
+/* EXAMPLES */
+
+.examples {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    8px;
+
+  margin:
+    12px 0 18px;
+
+}
+
+
+.examples button {
+
+  border:
+    1px solid #dfe4ef;
+
+  background:
+    #fff;
+
+  padding:
+    8px 11px;
+
+  border-radius:
+    10px;
+
+  cursor:
+    pointer;
+
+}
+
+
+/* PRIMARY */
+
+.primary {
+
+  width:
+    100%;
+
+  border:
+    0;
+
+  border-radius:
+    14px;
+
+  padding:
+    15px 18px;
+
+  background:
+    #315bd6;
+
+  color:
+    white;
+
+  font-size:
+    16px;
+
+  font-weight:
+    800;
+
+  cursor:
+    pointer;
+
+}
+
+
+.primary:disabled {
+
+  opacity:
+    .65;
+
+  cursor:
+    wait;
+
+}
+
+
+/* STATUS */
+
+.status {
+
+  min-height:
+    24px;
+
+  margin-top:
+    13px;
+
+  color:
+    #667085;
+
+}
+
+
+/* HIDDEN */
+
+.hidden {
+  display: none;
+}
+
+
+/* RESULT */
+
+.result-head {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    12px;
+
+}
+
+
+.verified {
+
+  padding:
+    7px 10px;
+
+  border-radius:
+    999px;
+
+  font-size:
+    13px;
+
+  font-weight:
+    800;
+
+  background:
+    #e8f8ee;
+
+  color:
+    #16733b;
+
+}
+
+
+/* EQUATION */
+
+.equation-box {
+
+  background:
+    #f7f9fc;
+
+  border-radius:
+    16px;
+
+  padding:
+    22px;
+
+  margin:
+    18px 0;
+
+}
+
+
+.label {
+
+  color:
+    #667085;
+
+  font-size:
+    13px;
+
+  margin-bottom:
+    8px;
+
+}
+.balanced {
+
+  font-size:
+    clamp(
+      21px,
+      4vw,
+      32px
+    );
+
+  font-weight:
+    800;
+
+  overflow-wrap:
+    anywhere;
+
+}
+
+
+/* METHOD */
+
+.method-box {
+
+  padding:
+    13px 15px;
+
+  border-left:
+    4px solid #315bd6;
+
+  background:
+    #f4f7ff;
+
+}
+
+
+/* WARNING */
+
+.warning {
+
+  margin-top:
+    15px;
+
+  padding:
+    14px;
+
+  border-radius:
+    12px;
+
+  background:
+    #fff7df;
+
+  color:
+    #795b00;
+
+}
+
+
+/* STEPS */
+
+.steps {
+
+  margin-top:
+    25px;
+
+  line-height:
+    1.7;
+
+}
+
+
+.steps table {
+
+  width:
+    100%;
+
+  border-collapse:
+    collapse;
+
+  margin:
+    15px 0;
+
+}
+
+
+.steps th,
+.steps td {
+
+  border:
+    1px solid #e1e5ed;
+
+  padding:
+    9px;
+
+  text-align:
+    left;
+
+}
+
+
+.steps th {
+
+  background:
+    #f5f7fa;
+
+}
+
+
+.steps code {
+
+  background:
+    #f0f2f6;
+
+  padding:
+    2px 5px;
+
+  border-radius:
+    5px;
+
+}
+
+
+/* MOBILE */
+
+@media (
+  max-width: 600px
+) {
+
+  .container {
+
+    width:
+      calc(100% - 20px);
+
+    padding-top:
+      25px;
+
+  }
+
+
+  .card {
+
+    padding:
+      18px;
+
+    border-radius:
+      17px;
+
+  }
+
+}
