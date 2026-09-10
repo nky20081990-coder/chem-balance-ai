@@ -260,9 +260,9 @@ balanceBtn.addEventListener(
       ------------------------------------------
       */
 
-      stepsEl.innerHTML =
-        data.steps_html ||
-        "<p>Không có lời giải.</p>";
+      stepsEl.textContent =
+        data.steps_text ||
+        "Không có lời giải.";
 
 
       /*
